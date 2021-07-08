@@ -8,6 +8,9 @@
   <%= link_to "削除", post_image_path(@post_image), method: :delete %>
   <% end %>
 </div>
+<div class="comments">
+  <%= render "post_comments/comment", post_image: @post_image, post_comment: @post_comment %>
+</div>
 
 <div>
   <%= link_to '一覧ページ' , post_images_path %>
