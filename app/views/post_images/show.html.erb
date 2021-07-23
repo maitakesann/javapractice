@@ -1,4 +1,4 @@
-<div class="post-body">
+<div class="post-body text-center">
   <%= attachment_image_tag @post_image, :image %>
   <p>ショップ名：<%= @post_image.shop_name %></p>
   <p>説明：<%= @post_image.caption %></p>
@@ -8,10 +8,10 @@
   <%= link_to "削除", post_image_path(@post_image), method: :delete %>
   <% end %>
 </div>
-<div class="favorite">
+<div class="favorite text-center">
   <%= render "favorites/favorite", post_image: @post_image %>
 </div>
-<div class="comments">
+<div class="comments text-center">
   <%= render "post_comments/comment", post_image: @post_image, post_comment: @post_comment %>
 </div>
 

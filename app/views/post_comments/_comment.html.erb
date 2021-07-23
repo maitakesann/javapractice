@@ -5,7 +5,7 @@
   <%= post_comment.created_at.strftime('%Y/%m/%d') %><%= post_comment.comment %>
 <% end %>
 </div>
-<div class="new-comment">
+<div class="new-comment text-center">
 <%= form_with(model:[post_image, post_comment], local: true) do |f| %>
   <%= f.text_area :comment, rows:'5',placeholder: "コメントをここに" %>
   <%= f.submit "送信する" %>
