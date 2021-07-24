@@ -1,4 +1,4 @@
-<div class="profile-container text-center">
+<div class="profile-container text-center py-2">
   <h3 class="profile-name py-3"><%= @user.name %></h3>
   <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
   <% if @user.id == current_user.id %>
