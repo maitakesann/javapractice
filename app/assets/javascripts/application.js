@@ -18,3 +18,12 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+var title = "ウィンドウを表示しました";
+alert(title);
+
+$(h1).ready(function () {
+  $('.jquery').on('click', function(){
+    $(this).css('color','red');
+  });
+});
