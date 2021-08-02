@@ -17,3 +17,22 @@
   <p>ユーザーネーム：<%= post_image.user.name %></p>
 </div>
 <% end %>
+
+<script>
+var title = "ウィンドウを表示しました";
+alert(title);
+
+$(function() {
+  $('#back a').on('click',function(event){
+    $('body, html').animate({
+      scrollTop:0
+    }, 800);
+    event.preventDefault();
+  });
+});
+</script>
+<p id="back">
+  <a href="#">
+   TOPへ
+  </a>
+</p>
