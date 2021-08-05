@@ -23,4 +23,19 @@
     </div>
   </div>
   <% end %>
+<span class="text-center" id="back">
+  <a href="#">
+   TOPへ
+  </a>
+</span>
 <%= paginate @post_images %>
+<script>
+  $(function() {
+  $('#back a').on('click',function(event){
+    $('body, html').animate({
+      scrollTop:0
+    }, 800);
+    event.preventDefault();
+  });
+});
+</script>
