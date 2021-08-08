@@ -18,3 +18,20 @@
 <div>
   <%= link_to '一覧ページ' , post_images_path %>
 </div>
+
+<span class="text-center" id="back">
+  <a href="#">
+   TOPへ
+  </a>
+</span>
+
+<script>
+  $(function() {
+  $('#back a').on('click',function(event){
+    $('body, html').animate({
+      scrollTop:0
+    }, 800);
+    event.preventDefault();
+  });
+});
+</script>
