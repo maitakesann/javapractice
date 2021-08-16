@@ -1,6 +1,6 @@
 
 
-  <h1 class="my-5">11章【タブメニューを作ってみよう】</h1>
+  <h1 class="my-5">タブメニュー</h1>
 
     <div class="wrap">
       <ul id="tab-menu">
@@ -29,6 +29,27 @@
       </div>
     </div>
 
+  <h1 class="my-5">ハンバーガーメニュー</h1>
+    <div id="sp-menu">
+      <h2>メニュー一覧</h2>
+      <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+      </ul>
+    </div>
+    <div id="hm-icon">
+      <a class="menu-trigger" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  
+
 <script>
 $('#tab-contents .tab[id != "tab1"]').hide();
 $('#tab-menu a').on('click', function(event) {
@@ -37,5 +58,13 @@ $('#tab-menu a').on('click', function(event) {
   $(this).addClass("active");
   $($(this).attr("href")).show();
   event.preventDefault();
+});
+
+$(function() {
+  $('.menu-trigger').on('click', function(event) {
+    $(this).toggleClass('active');
+    $('#sp-menu').fadeToggle();
+    event.preventDefault();
+  });
 });
 </script>
