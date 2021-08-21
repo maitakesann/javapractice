@@ -1,6 +1,6 @@
-class javpractic{class Cloud9Sample{ 
+class javpractic{class Cloud9Sample{
     public static void main(String args[]){
-        System.out.println("Hello World in Cloud9Sample."); 
+        System.out.println("Hello World in Cloud9Sample.");
     }
 }
 
@@ -38,8 +38,8 @@ class javpractic{class Cloud9Sample{
     <div id="sp-menu">
       <h2>メニュー一覧</h2>
       <ul>
-        <li><a href="#">menu1</a></li>
-        <li><a href="#">menu2</a></li>
+        <li><%= link_to '投稿一覧ページ' , post_images_path %></li>
+        <li><%= link_to 'マイページ' , user_path(current_user.id) %></li>
         <li><a href="#">menu3</a></li>
       </ul>
     </div>
@@ -53,7 +53,7 @@ class javpractic{class Cloud9Sample{
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
-  
+
 
 <script>
 $('#tab-contents .tab[id != "tab1"]').hide();
