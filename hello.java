@@ -8,9 +8,19 @@ public class hello {
     int x = 7 ;int y = 5;
     System.out.println(x * y);
 
-    int sum = Integer.parseInt(args[0]) + Integer.parseInt(args[1]);
+    int oddSum = 0;
+    int evenSum = 0;
 
-    System.out.format("The sum of %s and %s is %s.\n",
-      args[0], args[1], Integer.toString(sum));
+    int[] numbers = {1,2,3,4,5,6,7,8,9};
+      for (int i = 0; i < numbers.length; i++){
+        if(numbers[i] % 2 == 0){
+          evenSum += numbers[i];
+        }else{
+          oddSum += numbers[i];
+        }
+      }
+    System.out.println(oddSum);
+    System.out.println(evenSum);
+
   }
 }
