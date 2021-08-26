@@ -21,6 +21,17 @@ public class hello {
       }
     System.out.println(oddSum);
     System.out.println(evenSum);
+    System.out.println(numbers[2]);
+    
+    for (int i = 1; i <= 3; i++){
+      for (int j = 3; j >= 1; j--){
+        if (i != j){
+          System.out.println("("i" + "," + "j")");
+        }else{
+          System.out.println();
+        }
+      }
+    }
 
   }
 }
