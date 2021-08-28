@@ -18,7 +18,7 @@ public class Main{
     int age2 = new java.util.Scanner(System.in) .nextInt();
     System.out.println("あなたは" + age2 +"歳で、名前は" + name + "です。");*/
 
-    System.out.println("ようこそ占いの館へ");
+    /*System.out.println("ようこそ占いの館へ");
     System.out.println("あなたの名前を入力してください");
       String name = new java.util.Scanner(System.in).nextLine();
     System.out.println("あなたの年齢を入力してください");
@@ -31,6 +31,15 @@ public class Main{
 
     for(int q = 0; q < 5; q ++){
       System.out.println("これは" + (q + 1) +"です");
+    }*/
+
+    //99の段
+    for(int w = 1 ; w < 10; w++){
+      for(int e =1; e < 10; e++){
+        System.out.print(w * e);
+        System.out.print(" "); //空白
+      }
+        System.out.println(""); //改行
     }
   }
 }
