@@ -20,19 +20,13 @@ public class Main{
 
     System.out.println("ようこそ占いの館へ");
     System.out.println("あなたの名前を入力してください");
-    String name2 = new java.util.Scanner(System.in).nextLine();
+      String name = new java.util.Scanner(System.in).nextLine();
     System.out.println("あなたの年齢を入力してください");
-      String ageString =new java.util.Scanner(System.in).nextLine();
-        int age3 = Integer.parseInt(ageString);
-    //7
+      String ageString = new java.util.Scanner(System.in).nextLine();
+        int age2 = Integer.parseInt(ageString);
     int fortune = new java.util.Random().nextInt(4);
-    //8
-    fortune ++;
-    //9
+    fortune++;
     System.out.println("占いの結果が出ました");
-    //10
-    System.out.println(age3 + "齢の" + name2 + "さん、あなたの運気は" + fortune + "です");
-
-
+    System.out.println(age2 + "歳の" + name + "の運勢は" + fortune + "です");
   }
 }
