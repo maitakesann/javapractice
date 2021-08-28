@@ -28,5 +28,9 @@ public class Main{
     fortune++;
     System.out.println("占いの結果が出ました");
     System.out.println(age2 + "歳の" + name + "の運勢は" + fortune + "です");
+
+    for(int q = 0; q < 5; q ++){
+      System.out.println("これは" + (q + 1) +"です");
+    }
   }
 }
