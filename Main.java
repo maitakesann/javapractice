@@ -31,7 +31,7 @@ public class Main{
 
     for(int q = 0; q < 5; q ++){
       System.out.println("これは" + (q + 1) +"です");
-    }*/
+    }
 
     //99の段
     for(int w = 1 ; w < 10; w++){
@@ -40,6 +40,20 @@ public class Main{
         System.out.print(" "); //空白
       }
         System.out.println(""); //改行
-    }
+    }*/
+
+    System.out.println("[メニュー] 1:検索 2:登録 3:削除 4:変更"); 
+      int selected = new java.util.Scanner(System.in).nextInt();
+      switch(selected){
+        case 1: System.out.println("検索します");
+        break;
+        case 2: System.out.println("登録します");
+        break;
+        case 3: System.out.println("削除します");
+        break;
+        case 4: System.out.println("変更します");
+        break;
+        default:System.out.println("");
+      }
   }
 }
