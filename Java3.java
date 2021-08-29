@@ -1,7 +1,7 @@
 class Java3{
     public static void main(String[] args){
 
-      int isHungry = 0 ;
+      /*int isHungry = 0 ;
       String food = "rice";
       System.out.println("こんにちは");
       if (isHungry == 0){
@@ -28,6 +28,15 @@ class Java3{
             System.out.println("違います");
           }
       }
-      System.out.println("ゲームを終了します");
+      System.out.println("ゲームを終了します");*/
+      int[] scores = {20,30,40,50,60};
+       for(int i = 0 ; i < scores.length; i++){
+        System.out.println(scores[i]);
+       }
+
+       int [] o = {20,30,40,50,60};
+        for(int p : o){
+          System.out.println(p);
+        }
     }
 }
