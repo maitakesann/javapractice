@@ -5,11 +5,12 @@ public class Main{
     String name = new java.util.Scanner(System.in).nextLine();
     System.out.println("あなたの年齢を入力してください");
     String ageString = new java.util.Scanner(System.in).nextLine();
-    int age = Integer.parseInt(ageString);
+    int age2 = Integer.parseInt(ageString);
     int fortune = new java.util.Random().nextInt(4);
     fortune ++;
+
     System.out.println("占いの結果が出ました");
-    System.out.println(age +"歳の" + name + "さんの運勢は、" + fortune + "です");
+    System.out.println(age2 +"歳の" + name + "さんの運勢は、" + fortune + "です");
 
 
 
