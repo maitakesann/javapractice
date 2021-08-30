@@ -38,5 +38,18 @@ class Java3{
         for(int p : o){
           System.out.println(p);
         }
+
+        int[] points = new int[4];
+        double[] weghit = new double[5];
+        boolean[] anserws = new boolean[3];
+        String[] names = new String[3];
+
+        int[] maneyList = {121902,8302,55100};
+        for(int u = 0; u < maneyList.length; u++ ){
+          System.out.println(maneyList[u]);
+        }
+        for(int maney:maneyList){
+          System.out.println(maney);
+        }
     }
 }
